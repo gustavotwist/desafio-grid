@@ -26,7 +26,6 @@ aside {
 main {
     grid-area: main;
     background-color: lightgreen;
-    
 }
 footer {
     grid-area: footer;
@@ -38,3 +37,5 @@ header, aside, main, footer {
     padding: 20px;
     border: 1px solid #000;
 }
+
+.con

@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 150px 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header header header"
+        "sidebar main main main"
+        "sidebar footer footer footer";
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+header {
+    grid-area: header;
+    background-color: lightblue;
+}
+aside {
+    grid-area: sidebar;
+    background-color: lightcoral;
+}
+main {
+    grid-area: main;
+    background-color: lightgreen;
+    grid-area: main;
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+    grid-template-rows: auto auto; /* Duas linhas ajustáveis ao conteúdo */
+    grid-template-areas:
+        "section1 section2"
+        "section3 section4";
+    gap: 10px; /* Espaçamento interno entre as áreas */
+    padding: 10px;
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: lightyellow;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: lightpink;
+}
+
+.section3 {
+    grid-area: section3;
+    background-color: lightgray;
+}
+
+.section4 {
+    grid-area: section4;
+    background-color: lightsalmon;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Estilizações adicionais para melhor visualização */
+header, aside, main, footer {
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.content {
+    display: grid;
+    height: 100vh; /* Usa a altura total da janela de visualização */
+    grid-template-columns: 100px 50px 100px; /* Define as colunas */
+    grid-template-rows: 80px auto 80px; /* Define as linhas */
+    column-gap: 10px; /* Espaçamento entre as colunas */
+    row-gap: 15px; /* Espaçamento entre as linhas */
+    /* Define áreas para melhor visualização */
+    grid-template-areas: 
+        "header sidebar content"
+        "main main main"
+        "footer footer footer";
+}

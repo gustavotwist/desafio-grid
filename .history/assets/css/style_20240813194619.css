@@ -38,3 +38,17 @@ header, aside, main, footer {
     padding: 20px;
     border: 1px solid #000;
 }
+
+.content {
+    display: grid;
+    height: 100vh; /* Usa a altura total da janela de visualização */
+    grid-template-columns: 100px 50px 100px; /* Define as colunas */
+    grid-template-rows: 80px auto 80px; /* Define as linhas */
+    column-gap: 10px; /* Espaçamento entre as colunas */
+    row-gap: 15px; /* Espaçamento entre as linhas */
+    /* Define áreas para melhor visualização */
+    grid-template-areas: 
+        "header sidebar content"
+        "main main main"
+        "footer footer footer";
+}
