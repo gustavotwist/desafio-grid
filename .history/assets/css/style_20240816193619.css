@@ -30,7 +30,7 @@ main {
         "header header header header"
         "sidebar main main main"
         "sidebar footer footer footer";
-    gap: 10px;
+    gap: 10px; /* Espaçamento entre os itens */
 }
 
 header img {
@@ -41,15 +41,14 @@ header img {
 aside {
     grid-area: sidebar;
 }
-
 main {
     grid-area: main;
 }
-
 footer {
     grid-area: footer;
 }
 
+/* Estilizações adicionais para melhor visualização */
 header, aside, section, main, footer {
     padding: 20px;
 }
